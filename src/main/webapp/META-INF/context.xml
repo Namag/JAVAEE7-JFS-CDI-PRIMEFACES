@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true" privileged="true">
+    <!-- disables storage of sessions across restarts --> 
+    
+     <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <Manager pathname="/FinanceiroApp"/>
+    <Resource name="BeanManager" auth="Container" 
+        type="javax.enterprise.inject.spi.BeanManager" 
+        factory="org.jboss.weld.resources.ManagerObjectFactory"/>
+</Context>
